@@ -10,6 +10,16 @@ iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea');
 iceCreamShop(['cookies n cream', 'blue moon', 'superman', 'honey lavender', 'sea salt caramel'], 'pistachio'); // false
 iceCreamShop(['moose tracks'], 'moose tracks'); // true
 iceCreamShop([], 'honey lavender'); // false
+
+recursively iterate through the array of flavors
+check if each flavor is equal to favorite
+if so return true
+if not return false
+also return false if flavor array is empty
+we have two base statements
+one statement to check if is true <- (if flavors.includes favorite ) return true
+if not return false
+
 ***********************************************************************/
 
 
