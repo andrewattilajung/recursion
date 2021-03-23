@@ -23,14 +23,15 @@ if not return false
 ***********************************************************************/
 
 let iceCreamShop = (flavors, favorite) => {
+  debugger
   if(flavors.length === 0){
-    return false; 
+    return false;
   }
   if(flavors[0] === favorite){
     return true;
   }
-  
-  return iceCreamShop(flavors.shift());
+
+  return iceCreamShop(flavors.slice(1), favorite);
 }
 
 
