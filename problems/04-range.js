@@ -28,9 +28,9 @@ debugger
   }
   if (start < end) {
     newArray.push(start);
-    debugger
   }
-  return range(start + 1, end);
+//  range(start + 1, end);
+ return newArray.concat(range(start + 1, end));
 }
 
 
