@@ -23,7 +23,7 @@ if not return false
 ***********************************************************************/
 
 let iceCreamShop = (flavors, favorite) => {
-  debugger
+ 
   if(flavors.length === 0){
     return false;
   }

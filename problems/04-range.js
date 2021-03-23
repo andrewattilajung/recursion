@@ -22,7 +22,7 @@ return recursive iteration
 // your code here
 function range(start, end) {
   let newArray = [];
-debugger
+
   if (end < start) {
     return [];
   }
