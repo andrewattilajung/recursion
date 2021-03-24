@@ -7,7 +7,6 @@ Examples:
 
 
 ***********************************************************************/
-
 // your code here
 function reverse(string) {
 

@@ -23,8 +23,16 @@ let fibonacci = n => {
   if(n === 1 || n === 2){
     return 1;
   }
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  debugger
+  let fibonacci1 = fibonacci(n-1)
+  let fibonacci2 = fibonacci(n-2)
+  debugger
+  return fibonacci1 + fibonacci2;
 }
+
+console.log(fibonacci(6)); // 1
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = fibonacci;
