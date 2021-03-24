@@ -23,6 +23,14 @@ sort([]); // []
 
 function sort(nums, sorted = []) {
   // your code here
+  if(nums.length === 0){
+    return sorted;
+  }
+  if(nums.length > 0){
+    sorted.push(Math.min(...nums));
+    return sort(nums.shift(), sorted);
+  }
+  return sorted;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
