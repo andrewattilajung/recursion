@@ -22,14 +22,12 @@ return recursive iteration
 // your code here
 function range(start, end) {
   let newArray = [];
-
   if (end < start) {
     return [];
   }
   if (start < end) {
     newArray.push(start);
   }
-//  range(start + 1, end);
  return newArray.concat(range(start + 1, end));
 }
 
