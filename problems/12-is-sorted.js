@@ -12,17 +12,13 @@ isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
 debugger
 let isSorted = num => {
-  let tCounter = 0
-  if(num[0] > num[1]){
+  if (num[0] > num[1]) {
     return false;
   }
-  if(num[0] < num[1]){
-    tCounter++;
-  }
-  if(num.length === tCounter){
+  if (num[0] < num[1]) {
     return true;
   }
-  isSorted(num.slice(1))
+  return isSorted(num.slice(1));
 }
 
 console.log(isSorted([1, 2, 3, 4, 5])); // true
