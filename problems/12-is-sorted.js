@@ -15,7 +15,7 @@ let isSorted = num => {
   if (num[0] > num[1]) {
     return false;
   }
-  if (num[0] < num[1]) {
+  if (num.length === 0) {
     return true;
   }
   return isSorted(num.slice(1));
