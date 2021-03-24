@@ -23,15 +23,28 @@ sort([]); // []
 
 function sort(nums, sorted = []) {
   // your code here
-  if(nums.length === 0){
+    if(nums.length === 0){
     return sorted;
+   }
+
+   let minIndex = 0;
+   for (let i = 1; i < nums.length; i++) {
+     if (nums[i] < nums[minIndex]) {
+       minIndex = i;
+     }
+   }
+
+   sorted.push(nums[minIndex]);
+   nums.splice(minIndex, 1);
+
+   return sort(nums, sorted);
   }
-  if(nums.length > 0){
-    sorted.push(Math.min(...nums));
-    return sort(nums.shift(), sorted);
-  }
-  return sorted;
-}
+//   if(nums.length > 0){
+//     sorted.push(Math.min(...nums));
+//     return sort(nums.shift(), sorted);
+//   }
+//   return sorted;
+// }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
